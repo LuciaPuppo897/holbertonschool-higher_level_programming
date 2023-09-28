@@ -7,6 +7,6 @@ def safe_print_list(my_list=[], x=0):
             count += 1
         return count
     except IndexError: # Handle when index is out of range
-        pass
-        print()
-        return count
+            pass
+    print()
+    return count
