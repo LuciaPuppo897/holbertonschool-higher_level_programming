@@ -1,4 +1,4 @@
-# Pthon Classes
+# Python Classes
 - Class: A class is a blueprint or a template that defines the structure and behavior of objects. It specifies the attributes (data) and methods (functions) that objects of the class will have.
 
 - Object: An object is a specific instance of a class. It is created based on the class definition and represents a unique entity with its own set of attributes and the ability to invoke methods.
