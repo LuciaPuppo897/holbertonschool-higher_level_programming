@@ -1,20 +1,16 @@
-#!/usr/bin/python3
-"""A class that defines a Square"""
-
-
 class Square:
-    """Private attribute def size"""
-    def __init__(self, size):
-        self.__size = size
+    """A class that defines a Square"""
+    def __init__(self, size=0):
+        self.size = size  # Use the setter to validate and set size
 
     @property
     def size(self):
-        """returns size"""
+        """attribute def a size"""
         return self.__size
 
     @size.setter
     def size(self, value):
-        """sets the value"""
+        """set the size"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -22,5 +18,5 @@ class Square:
         self.__size = value
 
     def area(self):
-        """returns area"""
+        """returns the area"""
         return self.__size ** 2
