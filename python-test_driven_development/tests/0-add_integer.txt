@@ -1,0 +1,50 @@
+==============
+Test add_integer
+=============
+
+"""Test to check that add_integer function works correctly"""
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Test 1:
+
+>>> add_integer(2, 5)
+7
+
+Test 2:
+>>> add_integer(10, -4)
+6
+
+Test 3:
+>>> add_integer(3.8, 7)
+10
+
+Test 4:
+>>> add_integer(3, "Taylor_S")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+Test 5:
+>>> add_integer("Dean", 9)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+Test 6:
+>>> add_integer(3, 6, 11)
+Traceback (most recent call last):
+Tt: must be only two arguments
+
+Test 7:
+>>> add_integer((None), (None))
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+Test 8:
+>>> add_integer(2, float('inf'))
+Traceback (most recent call last):
+OverFlowError: cannot convert float infinity to integer
+
+Test 9:
+>>> add_integer((), ())
+Traceback (most recent call last):
+TypeError: a must be an integer
