@@ -30,9 +30,8 @@ Traceback (most recent call last):
 TypeError: a must be an integer
 
 Test 6:
->>> add_integer(3, 6, 11)
-Traceback (most recent call last):
-Tt: must be only two arguments
+>>> add_integer(3/4, 1)
+1
 
 Test 7:
 >>> add_integer((None), (None))
@@ -42,7 +41,7 @@ TypeError: a must be an integer
 Test 8:
 >>> add_integer(2, float('inf'))
 Traceback (most recent call last):
-OverFlowError: cannot convert float infinity to integer
+OverflowError: cannot convert float infinity to integer
 
 Test 9:
 >>> add_integer((), ())
