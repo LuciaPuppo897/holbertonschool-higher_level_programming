@@ -47,3 +47,7 @@ TypeError: a must be an integer
 Test 10:
 >>> add_integer(3/4, 1)
 1
+
+Test 11
+>>> add_integer(2)
+100
