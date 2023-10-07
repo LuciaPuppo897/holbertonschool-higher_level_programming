@@ -3,5 +3,8 @@
 
 
 def lookup(obj):
+    """return a list of the dir """
     if obj is not None:
-        print(dir(obj))
+        return (dir(obj))
+    else:
+        return []
