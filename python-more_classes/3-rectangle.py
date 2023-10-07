@@ -60,8 +60,4 @@ class Rectangle:
             rectangle_str = ""
             for _ in range(self.height):
                 rectangle_str += "#" * self.width + "\n"
-            return rectangle_str[:-1]  # Remove the trailing newline
-
-    def __repr__(self):
-        """Instance method that returns an official str rep of an instance"""
-        return f"Rectangle({self.width}, {self.height})"
+            return rectangle_str[:-1]
