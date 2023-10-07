@@ -1,0 +1,52 @@
+
+Test MyList
+=============
+
+"""
+Test to check that MyList class works correctly
+"""
+
+>>> Mylist= __import__('1-my_list.py').My_list
+
+Test 1:
+
+>>> my_list = Mylist()
+>>> my_list.append(1)
+>>> my_list.append(9)
+>>> my_list.append(16)
+>>> my_list.append(3)
+>>> my_list.print_sorted()
+[1, 3, 9, 16]
+
+Test 2:
+
+>>> my_list = Mylist()
+>>> my_list.append(-1)
+>>> my_list.append(-3)
+>>> my_list.append(-4)
+>>> my_list.append(-2)
+>>> my_list.print_sorted()
+[-4, -3, -2, -1]
+
+Test 3:
+>>> my_list = Mylist()
+>>> my_list.append(None)
+
+
+Test 4:
+
+>>> my_list = Mylist()
+>>> my_list.append(-1)
+>>> my_list.append(float(inf))
+>>> my_list.print_sorted()
+[-1, inf]
+
+Test 5:
+
+>>> list = Mylist
+>> list.print_sorted()
+[]
+
+Test 6:
+>>> issubclass(MyList,list)
+True
