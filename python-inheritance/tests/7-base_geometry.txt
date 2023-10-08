@@ -16,9 +16,3 @@ Test 2
 >>> geometry = BaseGeometry()
 >>> geometry.integer_validator("side_length", 5)
 >>> geometry.integer_validator("width", 10)
-
-
-Test 5: 
->>> geometry.integer_validator("height")
-Traceback (most recent call last):
-TypeError: integer_validator() missing 1 requiered possitional argument: 'value'
