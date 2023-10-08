@@ -13,6 +13,10 @@ Traceback (most recent call last):
 Exception: area() is not implemented
 
 Test 2
->>> geometry = BaseGeometry()
 >>> geometry.integer_validator("side_length", 5)
 >>> geometry.integer_validator("width", 10)
+
+Test 3
+>>> geometry.integer_validator("height", "Hello")
+Traceback (most recent call last):
+TypeError: height must be an integer
