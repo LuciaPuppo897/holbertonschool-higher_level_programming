@@ -3,7 +3,6 @@
 
 
 class BaseGeometry:
-
+    """class inherit from basegeometry"""
     def area(self):
-        """public method"""
         raise Exception("area() is not implemented")
