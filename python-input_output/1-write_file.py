@@ -4,5 +4,5 @@
 
 def write_file(filename="", text=""):
     """write an encoded file"""
-    with open(filename, 'w', encoding='utf-8') as myFile:
-        return myFile.write(text)
+    with open(filename, "w",) as myfile:
+        return myfile.write(text)
