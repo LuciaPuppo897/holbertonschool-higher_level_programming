@@ -20,3 +20,8 @@ Test 3
 >>> geometry.integer_validator("height", "Hello")
 Traceback (most recent call last):
 TypeError: height must be an integer
+
+Test 3
+>>> geometry.integer_validator("height", 0)
+Traceback (most recent call last):
+ValueError: height must be greater than 0
