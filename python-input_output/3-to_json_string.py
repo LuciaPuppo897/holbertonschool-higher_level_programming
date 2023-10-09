@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 """a function that returns the JSON rep of an object (string)"""
 
 
