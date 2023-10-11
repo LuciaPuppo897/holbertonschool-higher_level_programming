@@ -81,3 +81,7 @@ class Rectangle(Base):
         """public method that prints in stdout the Rectangle"""
         for _ in range(self.__height):
             print("#" * self.__width)
+
+    def __str__(self) -> str:
+        """override a str that prints a rectangle with a specific format"""
+        return f"[Rectangle] ({self.id}){self.__x}/{self.__y} - {self.__width}/{self.__height}"
