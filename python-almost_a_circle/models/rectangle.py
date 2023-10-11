@@ -1,12 +1,14 @@
 #!/usr/bin/python3
-"""class that inherit from base and define a rectangle
-    with width,heigth,y and x"""
-
-
-from .base import Base
+"""
+class that inherit from base and define a rectangle
+with width,heigth,y and x
+"""
+from models.base import Base
 
 
 class Rectangle(Base):
+    """new class that inherits from base"""
+    
     def __init__(self, width, height, x=0, y=0, id=None):
         """Call the super class constructor with id and initializate them"""
         self.width = width
