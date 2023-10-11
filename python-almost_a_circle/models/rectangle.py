@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""class that inherit from base and define a rectangle"""
+"""class that inherit from base and define a rectangle
+    with width,heigth,y and x"""
 
 
 from .base import Base
@@ -36,20 +37,36 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        """set width value"""
+        """set width value validation"""
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer")
+        if value <= 0:
+            raise ValueError("width must be > 0")
         self.__width = value
 
     @height.setter
     def height(self, value):
-        """sets heigth value"""
+        """set height value validator"""
+        if not isinstance(value, int):
+            raise TypeError("height must be an integer")
+        if value <= 0:
+            raise ValueError("height must be > 0")
         self.__height = value
 
     @x.setter
     def x(self, value):
-        """sets x value"""
+        """set x value validator"""
+        if not isinstance(value, int):
+            raise TypeError("x must be an integer")
+        if value < 0:
+            raise ValueError("x must be >= 0")
         self.__x = value
 
     @y.setter
     def y(self, value):
-        """sets y value"""
+        """set y value validator"""
+        if not isinstance(value, int):
+            raise TypeError("y must be an integer")
+        if value < 0:
+            raise ValueError("y must be >= 0")
         self.__y = value
