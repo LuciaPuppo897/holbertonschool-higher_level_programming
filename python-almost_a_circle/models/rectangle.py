@@ -8,7 +8,7 @@ from models.base import Base
 
 class Rectangle(Base):
     """new class that inherits from base"""
-    
+
     def __init__(self, width, height, x=0, y=0, id=None):
         """Call the super class constructor with id and initializate them"""
         self.width = width
@@ -76,3 +76,8 @@ class Rectangle(Base):
     def area(self):
         """Public method that return the area of the Rectangle"""
         return self.__width * self.__height
+
+    def display(self):
+        """public method that prints in stdout the Rectangle"""
+        for _ in range(self.__height):
+            print("#" * self.__width)
