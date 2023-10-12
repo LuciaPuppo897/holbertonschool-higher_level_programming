@@ -91,16 +91,35 @@ class Rectangle(Base):
             f"{self.__width}/{self.__height}"
             )
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Assign arguments to attributes in a specific order"""
         if args:
             if len(args) >= 1:
                 self.id = args[0]
             if len(args) >= 2:
-                self.width = args[1]
+                self.size = args[1]
             if len(args) >= 3:
-                self.height = args[2]
+                self.x = args[2]
             if len(args) >= 4:
-                self.x = args[3]
-            if len(args) >= 5:
-                self.y = args[4]
+                self.y = args[3]
+        else:
+            if 'id' in kwargs:
+                self.id = kwargs['id']
+            if 'size' in kwargs:
+                self.size = kwargs['size']
+            if 'x' in kwargs:
+                self.x = kwargs['x']
+            if 'y' in kwargs:
+                self.y = kwargs['y']
+
+    def to_dictionary(self):
+        """Return a dictionary of the Rectangle"""
+        dict_r = {
+            "id": self.id,
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y
+        }
+        return dict_r
+    
