@@ -122,4 +122,3 @@ class Rectangle(Base):
             "y": self.y
         }
         return dict_r
-    
