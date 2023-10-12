@@ -12,6 +12,17 @@ class Square(Rectangle):
         """initialize the values"""
         super().__init__(size, size, x, y, id)
 
+    @property
+    def size(self):
+        """def prop size"""
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        """set size values"""
+        self.width = value
+        self.height = value
+
     def __str__(self):
         """Override the _str_ method to return the specified format Square"""
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
