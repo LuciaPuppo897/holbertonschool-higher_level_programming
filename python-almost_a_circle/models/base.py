@@ -42,7 +42,7 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        """Return an instance with all attributes set from a dictionary."""
+        """Return an instance with all attributes set from a dictionary"""
         if cls.__name__ == "Rectangle":
             shape = cls(1, 1)
         elif cls.__name__ == "Square":
@@ -52,3 +52,17 @@ class Base:
 
         shape.update(**dictionary)
         return shape
+    
+    @classmethod
+    def load_from_file(cls):
+        """Return a list of instances from a JSON file"""
+        file_name = f"{cls.__name__}.json" 
+
+        try:
+            with open(file_name, 'r') as file:
+                json_string = file.read()
+                dict_list = Base.from_json_string(json_string)
+                instance_list = [cls.create(**d) for d in dict_list]
+                return instance_list
+        except FileNotFoundError:
+            return []
