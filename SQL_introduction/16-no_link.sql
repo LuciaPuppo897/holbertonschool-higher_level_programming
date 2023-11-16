@@ -1,5 +1,6 @@
 -- Write a script that lists all records of the table second_table of the database hbtn_0c_0 in your MySQL
 SELECT score, name
-WHERE name EXISTS
+FROM second_table
+WHERE name is not NULL
 ORDER BY score DESC
 
