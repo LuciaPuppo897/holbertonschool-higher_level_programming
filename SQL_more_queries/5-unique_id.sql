@@ -1,7 +1,6 @@
 -- Write a script that creates the table unique_id on your MySQL server.
 CREATE TABLE IF IS NOT EXISTS unique_id(
-    id INT = 1,
+    id INT DEFAULT 1 UNIQUE,
     name VARCHAR(256),
-    UNIQUE (id)
 );
 
