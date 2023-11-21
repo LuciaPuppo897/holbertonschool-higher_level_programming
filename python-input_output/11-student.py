@@ -18,8 +18,6 @@ class Student():
         else:
             return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
 
-    
     def reload_from_json(self, json):
         """deserialized from json"""
         return self.__dict__.update(json)
-                    
