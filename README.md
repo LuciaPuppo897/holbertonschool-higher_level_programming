@@ -1,4 +1,4 @@
-# holbertonschool-higher_level_programming
+### Holbertonschool-higher_level_programming
 
 This repository contains various projects and exercises completed as part of the higher-level programming curriculum at Holberton School. The projects cover different aspects of programming and computer science, with a focus on Python and SQL.
 
